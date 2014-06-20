@@ -60,7 +60,7 @@ public class PCMReaderTest {
 	@Test
 	public void testReader101() {
 		Collection<String> filenames = getPCMFileNames("input/");
-		filenames.remove("Comparison_of_consumer_brain?computer_interfaces.pcm"); // only this one fails
+		//filenames.remove("Comparison_of_consumer_brain?computer_interfaces.pcm"); // only this one fails
 		PCMReader pcmReader = new PCMReader() ; 
 		for (String fileName : filenames) {
 			assertNotNull(pcmReader.getPCM(fileName));
